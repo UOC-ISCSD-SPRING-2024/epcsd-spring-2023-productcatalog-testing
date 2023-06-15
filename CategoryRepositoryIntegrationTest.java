@@ -28,7 +28,7 @@ public class CategoryRepositoryIntegrationTest {
     private CategoryRepository categoryRepository;
 
     @Test
-    void whenFindByName_thenReturnCategory() {
+    void whenFindById_thenReturnCategory() {
 
         Category category = Category.builder().name(CATEGORY_NAME).description(DESCRIPTION).build();
         CategoryEntity categoryEntity = CategoryEntity.fromDomain(category);
